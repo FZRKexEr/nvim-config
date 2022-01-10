@@ -16,3 +16,5 @@ set hlsearch
 set termguicolors
 set background=dark
 set clipboard=unnamed
+
+let mapleader=' '

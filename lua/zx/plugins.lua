@@ -43,7 +43,8 @@ function M.install(plugins)
 
     if has_lua == true then
       require('configs.' .. file_name)
-    elseif has_vim == true then
+    end
+    if has_vim == true then
       vim.cmd("source ~/.config/nvim/lua/configs/" .. file_name .. ".vim")
     end
   end
