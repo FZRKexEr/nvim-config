@@ -20,6 +20,7 @@ Q: 为什么不用代码补全？
 
 A: Useless for XCPC, 目前的代码补全插件太复杂了。
 
+
 Q: 为什么用默认 statusline 和 bufferline ？
 
 A: 在找到完美的替代品之前，原汁原味的朴素界面是最舒适的。
