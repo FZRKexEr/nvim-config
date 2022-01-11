@@ -1,2 +1,3 @@
 # nvim-config
-Neovim configuration
+
+[README in Chinese | 中文文档](README-cn.md)
