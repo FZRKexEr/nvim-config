@@ -1,6 +1,6 @@
 local M = {}
 
-function get_name(s)
+local function get_name(s)
   local l = 1; local r = #s
   for i = 1, #s do 
     local c = string.sub(s, i, i)
@@ -13,7 +13,7 @@ function get_name(s)
   return string.sub(s, l, r)
 end
 
-function file_exist(s)
+local function file_exist(s)
   if vim.api.nvim_eval("empty(glob('" .. s .. "'))") == 1 then
     return false
   else 
