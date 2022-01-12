@@ -6,7 +6,7 @@ require('lualine').setup {
     theme = 'auto',
     component_separators = '|',
     section_separators = '', 
-    disabled_filetypes = {''},
+    disabled_filetypes = {'', 'vim-plug'},
     always_divide_middle = true,
   },
   sections = {
@@ -37,13 +37,6 @@ require('lualine').setup {
     lualine_y = {},
     lualine_z = {}
   },
-  tabline = {
-    lualine_a = {'buffers'},
-    lualine_b = {},
-    lualine_c = {},
-    lualine_x = {},
-    lualine_y = {},
-    lualine_z = {'tabs'},
-  },
+  tabline = {},
   extensions = {}
 }

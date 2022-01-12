@@ -8,4 +8,5 @@ zx.plugins.install {
   { name = 'nvim-lua/plenary.nvim', }, 
   { name = 'kyazdani42/nvim-web-devicons', }, 
   { name = 'nvim-lualine/lualine.nvim', },
+  { name = 'romgrk/barbar.nvim', },
 }
