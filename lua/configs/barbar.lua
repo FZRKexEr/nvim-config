@@ -2,6 +2,7 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 map('n', '<S-h>', ':BufferPrevious<CR>', opts)
 map('n', '<S-l>', ':BufferNext<CR>', opts)
+map('n', '<space>q', ':BufferDelete<CR>', opts)
 
 -- Set barbar's options
 vim.g.bufferline = {
