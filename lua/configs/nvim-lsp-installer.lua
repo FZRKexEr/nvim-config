@@ -25,7 +25,9 @@ for _, name in pairs(servers) do
   local server_is_found, server = lsp_installer.get_server(name)
   if server_is_found then
     if not server:is_installed() then
+      open = true
       server:install()
     end
   end
 end
+

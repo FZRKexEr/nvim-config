@@ -1,7 +1,6 @@
 local M = {
   "bashls",
   "clangd",
-  "gopls",
   "jdtls",
   "ltex",
   "sumneko_lua",

@@ -16,8 +16,6 @@
 
 需要先安装：
 - nodejs
-- cmake
-- llvm
 
 运行命令, 以前的 nvim 配置会自动备份在 `~/.config/nvim.bak` 。
 
