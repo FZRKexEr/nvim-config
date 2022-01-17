@@ -1,11 +1,9 @@
-
-
 require('lualine').setup {
   options = {
     icons_enabled = true,
     theme = 'auto',
     component_separators = '|',
-    section_separators = '', 
+    section_separators = '',
     disabled_filetypes = {'', 'vim-plug'},
     always_divide_middle = true,
   },
@@ -15,12 +13,12 @@ require('lualine').setup {
       { 'filename',  separator = { right = '' } },
       {
         'diagnostics',
-        sources = { 'ale' },
+        sources = { 'nvim_diagnostic' },
         sections = { 'error', 'warn', 'info' },
         symbols = { error = ' ', warn = ' ', info = ' ' },
-        colored = true,          
-        update_in_insert = false, 
-        always_visible = false,   
+        colored = true,
+        update_in_insert = false,
+        always_visible = false,
         separator = { right = '' }
       },
     },
