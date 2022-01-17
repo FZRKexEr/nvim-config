@@ -18,4 +18,6 @@ zx.plugins.install {
   { name = 'lukas-reineke/indent-blankline.nvim', },
   { name = 'L3MON4D3/LuaSnip', },
   { name = 'Pocco81/AutoSave.nvim', },
+  { name = 'hrsh7th/cmp-vsnip', },
+  { name = 'hrsh7th/vim-vsnip', },
 }
