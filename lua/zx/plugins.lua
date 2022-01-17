@@ -64,6 +64,8 @@ function M.install(plugins)
     end
   end
   if need_install then 
-    vim.cmd('autocmd VimEnter * PlugInstall | q')
+    vim.cmd('autocmd VimEnter * PlugInstall --sync | q')
   end
 end
+
+return M
