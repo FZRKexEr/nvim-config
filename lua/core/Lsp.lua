@@ -1,6 +1,6 @@
 local M = {
   "bashls",
-  "ccls",
+  "clangd",
   "gopls",
   "jdtls",
   "ltex",
