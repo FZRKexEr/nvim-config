@@ -47,18 +47,24 @@ function M.install(plugins)
     vim.cmd(s)
   end
   vim.fn['plug#end']()
+  local need_install = false; 
   for i = 1, #plugins do
     local file_name = get_name(plugins[i].name)
     local installed = file_exist('~/.local/share/nvim/plugged/' .. get_full_name(plugins[i].name) .. '/')
     local has_lua = file_exist('~/.config/nvim/lua/configs/' .. file_name .. '.lua')
     local has_vim = file_exist('~/.config/nvim/lua/configs/' .. file_name .. '.vim')
-
+    if  installed == false then
+      need_install = true;
+    end
     if has_lua == true and installed then
       require('configs.' .. file_name)
     end
     if has_vim == true and installed then
       vim.cmd("source ~/.config/nvim/lua/configs/" .. file_name .. ".vim")
     end
+  end
+  if need_install == true then
+    vim.cmd('PlugInstall')
   end
 end
 
