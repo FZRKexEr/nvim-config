@@ -22,6 +22,13 @@ local function file_exist(s)
 end
 
 function M.install(plugins) 
+  if file_exist("~/.local/share/nvim/site/autoload/plug.vim") == false then 
+    os.execute([[
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    ]])
+    vim.cmd('autocmd VimEnter * PlugInstall --sync | source $MYVIMRC')
+  end
   vim.fn['plug#begin']()
   for i = 1, #plugins do 
     local s = 'Plug ' .. "'" .. plugins[i].name .. "'" 
