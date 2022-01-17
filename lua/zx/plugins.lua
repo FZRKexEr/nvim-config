@@ -13,6 +13,17 @@ local function get_name(s)
   return string.sub(s, l, r)
 end
 
+local function get_full_name(s) 
+  local l = 1
+  for i = 1, #s do 
+    local c = string.sub(s, i, i)
+    if c == '/' then
+      l = i + 1
+    end
+  end
+  return string.sub(s, l, #s)
+end
+
 local function file_exist(s)
   if vim.api.nvim_eval("empty(glob('" .. s .. "'))") == 1 then
     return false
@@ -38,13 +49,14 @@ function M.install(plugins)
   vim.fn['plug#end']()
   for i = 1, #plugins do
     local file_name = get_name(plugins[i].name)
+    local installed = file_exist('~/.local/share/nvim/plugged/' .. get_full_name(plugins[i].name) .. '/')
     local has_lua = file_exist('~/.config/nvim/lua/configs/' .. file_name .. '.lua')
     local has_vim = file_exist('~/.config/nvim/lua/configs/' .. file_name .. '.vim')
 
-    if has_lua == true then
+    if has_lua == true and installed then
       require('configs.' .. file_name)
     end
-    if has_vim == true then
+    if has_vim == true and installed then
       vim.cmd("source ~/.config/nvim/lua/configs/" .. file_name .. ".vim")
     end
   end
