@@ -8,6 +8,7 @@
 
 # 特性说明
 
+- 🌈 Lsp 诊断，补全
 - ✨ 语法高亮
 - 🌲 文件树
 - 🚀 cpp, lua, sh, python 编译运行
@@ -22,3 +23,4 @@
 ```sh
 sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/nvim-config/main/install.sh)"
 ```
+
