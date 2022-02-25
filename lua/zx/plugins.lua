@@ -2,10 +2,10 @@ local M = {}
 
 local function get_name(s)
   local l = 1; local r = #s
-  for i = 1, #s do 
+  for i = 1, #s do
     local c = string.sub(s, i, i)
     if c == '.' then
-      r = i - 1 
+      r = i - 1
     elseif c == '/' then
       l = i + 1
     end
@@ -13,9 +13,9 @@ local function get_name(s)
   return string.sub(s, l, r)
 end
 
-local function get_full_name(s) 
+local function get_full_name(s)
   local l = 1
-  for i = 1, #s do 
+  for i = 1, #s do
     local c = string.sub(s, i, i)
     if c == '/' then
       l = i + 1
@@ -32,14 +32,14 @@ local function file_exist(s)
   end
 end
 
-function M.install(plugins) 
+function M.install(plugins)
   vim.fn['plug#begin']()
-  for i = 1, #plugins do 
-    local s = 'Plug ' .. "'" .. plugins[i].name .. "'" 
+  for i = 1, #plugins do
+    local s = 'Plug ' .. "'" .. plugins[i].name .. "'"
     if plugins[i].options ~= nil then
       s = s .. ', {'
       for j = 1, #plugins[i].options do
-        s = s .. " '" .. plugins[i].options[j][1] .. "':" 
+        s = s .. " '" .. plugins[i].options[j][1] .. "':"
         s = s .. " '" .. plugins[i].options[j][2] .. "',"
       end
       s = s .. '}'
@@ -53,8 +53,8 @@ function M.install(plugins)
     local installed = file_exist('~/.local/share/nvim/plugged/' .. get_full_name(plugins[i].name) .. '/')
     local has_lua = file_exist('~/.config/nvim/lua/configs/' .. file_name .. '.lua')
     local has_vim = file_exist('~/.config/nvim/lua/configs/' .. file_name .. '.vim')
-    if installed == false then 
-      need_install = true 
+    if installed == false then
+      need_install = true
     end
     if has_lua == true and installed then
       require('configs.' .. file_name)
@@ -63,7 +63,7 @@ function M.install(plugins)
       vim.cmd("source ~/.config/nvim/lua/configs/" .. file_name .. ".vim")
     end
   end
-  if need_install then 
+  if need_install then
     vim.cmd('autocmd VimEnter * PlugInstall --sync | source $MYVIMRC')
   end
 end

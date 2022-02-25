@@ -15,6 +15,6 @@ let &t_ut=''
 set hlsearch
 set termguicolors
 set background=dark
-set clipboard=unnamed
+" set clipboard=unnamed
 
 let mapleader=' '
