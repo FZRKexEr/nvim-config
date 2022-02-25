@@ -18,3 +18,6 @@ set background=dark
 " set clipboard=unnamed
 
 let mapleader=' '
+
+nnoremap <space>a gg"+yG
+
