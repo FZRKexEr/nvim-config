@@ -24,3 +24,8 @@
 sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/nvim-config/main/install.sh)"
 ```
 
+# 快捷键
+- `<Space>r` 运行当前文件
+- `<C-n>` 打开文件树
+- `<Space>a` 复制当前文件到系统剪贴板 
+
