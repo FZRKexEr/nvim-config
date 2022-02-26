@@ -14,7 +14,6 @@ zx.plugins.install {
   { name = 'hrsh7th/cmp-buffer', },
   { name = 'hrsh7th/cmp-path', },
   { name = 'hrsh7th/cmp-cmdline', },
-  { name = 'onsails/lspkind-nvim', },
   { name = 'lukas-reineke/indent-blankline.nvim', },
   { name = 'L3MON4D3/LuaSnip', },
   { name = 'Pocco81/AutoSave.nvim', },
