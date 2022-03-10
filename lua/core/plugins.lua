@@ -7,6 +7,7 @@ zx.plugins.install {
   { name = 'kyazdani42/nvim-web-devicons', },
   { name = 'nvim-lualine/lualine.nvim', },
   { name = 'romgrk/barbar.nvim', },
+  { name = 'dense-analysis/ale', },
 --  { name = 'neovim/nvim-lspconfig', },
 --  { name = 'hrsh7th/nvim-cmp', },
 --  { name = 'williamboman/nvim-lsp-installer', },
