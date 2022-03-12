@@ -17,7 +17,7 @@
 # 安装
 
 需要先安装：
-- GNU Compiler Collection (GCC)
+- GCC (Homebrew 版)
 - cppcheck (可选，推荐安装)
 
 运行命令, 以前的 nvim 配置会自动备份在 `~/.config/nvim.bak` 。
@@ -30,4 +30,3 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/nvim-config/main/in
 
 - `Space + r` 运行当前文件
 - `Control + n` 打开文件树
-
