@@ -1,6 +1,6 @@
 # nvim-config
 
-这是我的 Neovim 配置，因为不喜欢在 lua 文件里写 vimscript, 所以目前是用 lua 和 vimscript 混合完成的。
+这是我的 Neovim 配置，因为不喜欢在 lua 文件里写 vimscript, 所以目前是用 lua 和 vimscript 混合完成的。主要用来写 C++ 
 
 **没有什么特别的功能，不喜欢很多快捷键，越简单越好。**
 
@@ -8,7 +8,7 @@
 
 # 特性说明
 
-- ~~🌈 LSP 诊断，补全~~ ale 诊断
+- 🌈 ALE 诊断(非 LSP)
 - ✨ 语法高亮
 - 🌲 文件树
 - 🚀 cpp, lua, sh, python 编译运行
@@ -17,6 +17,8 @@
 
 需要先安装：
 - nodejs
+- GNU Compiler Collection (GCC)
+- cppcheck (可选，推荐安装)
 
 运行命令, 以前的 nvim 配置会自动备份在 `~/.config/nvim.bak` 。
 
@@ -25,7 +27,7 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/nvim-config/main/in
 ```
 
 # 快捷键
+
 - `<Space>r` 运行当前文件
 - `<C-n>` 打开文件树
-- `<Space>a` 复制当前文件到系统剪贴板 
 

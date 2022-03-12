@@ -2,7 +2,8 @@ let g:asyncrun_open = 8
 
 nnoremap <space>r :call Cmp() <CR>
 
-nnoremap <space>rr :AsyncRun -save=1 /opt/homebrew/bin/g++-11 -lstdc++ -std=c++17 "$(VIM_FILEPATH)" -o "$(VIM_FILEDIR)/$(VIM_FILENOEXT)" -Wall -O2 && $(VIM_FILEDIR)/$(VIM_FILENOEXT) && mv $(VIM_FILEDIR)/$(VIM_FILENOEXT) ~/.trash <CR>
+" nnoremap <space>rr :AsyncRun -save=1 /opt/homebrew/bin/g++-11 -lstdc++ -std=c++17 "$(VIM_FILEPATH)" -o "$(VIM_FILEDIR)/$(VIM_FILENOEXT)" -Wall -O2 && $(VIM_FILEDIR)/$(VIM_FILENOEXT) && mv $(VIM_FILEDIR)/$(VIM_FILENOEXT) ~/.trash <CR>
+" 有了正确配置的 ALE，不需要再看编译错误
 
 function! Cmp() 
   execute "w"
@@ -18,3 +19,4 @@ function! Cmp()
     execute "echo \"Unsupported language\""
   endif
 endfunction
+
