@@ -28,6 +28,6 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/nvim-config/main/in
 
 # 快捷键
 
-- `<Space>r` 运行当前文件
-- `<C-n>` 打开文件树
+- `Space + r` 运行当前文件
+- `Control + n` 打开文件树
 
