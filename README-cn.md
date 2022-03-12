@@ -12,7 +12,7 @@
 - ✨ 语法高亮
 - 🌲 文件树
 - 🚀 cpp, lua, sh, python 编译运行
--   只能用在 macOS
+- 🍎 只能用在 macOS
 
 # 安装
 
