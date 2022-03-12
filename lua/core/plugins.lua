@@ -9,6 +9,7 @@ zx.plugins.install {
   { name = 'romgrk/barbar.nvim', },
   { name = 'dense-analysis/ale', },
   { name = 'Pocco81/AutoSave.nvim', },
+  { name = 'aperezdc/vim-template', },
 --  { name = 'hrsh7th/cmp-vsnip', },
 --  { name = 'hrsh7th/vim-vsnip', },
 --  { name = 'neovim/nvim-lspconfig', },
