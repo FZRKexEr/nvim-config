@@ -12,19 +12,21 @@
 - ✨ 语法高亮
 - 🌲 文件树
 - 🚀 cpp, lua, sh, python 编译运行
+- 📖 打开新文件添加模板
 - 🍎 只能用在 macOS
 
 # 安装
 
-需要先安装：
-- GCC (Homebrew 版)
-- cppcheck (可选，推荐安装)
+1. 需要先安装：
+  - GCC (Homebrew 版)
+  - cppcheck (可选，推荐安装)
 
-运行命令, 以前的 nvim 配置会自动备份在 `~/.config/nvim.bak` 。
+2. 运行命令, 以前的 nvim 配置会自动备份在 `~/.config/nvim.bak` 。
+  ```sh
+  sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/nvim-config/main/install.sh)"
+  ```
 
-```sh
-sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/nvim-config/main/install.sh)"
-```
+3. 修改 `template` 文件夹内的模板。
 
 # 快捷键
 
