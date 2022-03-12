@@ -12,11 +12,11 @@
 - ✨ 语法高亮
 - 🌲 文件树
 - 🚀 cpp, lua, sh, python 编译运行
+-   只能用在 macOS
 
 # 安装
 
 需要先安装：
-- nodejs
 - GNU Compiler Collection (GCC)
 - cppcheck (可选，推荐安装)
 
