@@ -21,5 +21,6 @@ vim.g.ale_echo_msg_format = '[%linter%] %code: %%s'
 
 vim.g.ale_cpp_cc_executable = 'gcc-11' -- 直接跑本地编译然后返回编译结果
 vim.g.ale_cpp_cc_options = '-Wall -O2 -std=c++17'
+vim.g.ale_cpp_cppcheck_options = '-Wall -O2 -std=c++17'
 
 
