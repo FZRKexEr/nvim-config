@@ -1,3 +1,6 @@
+-- 已知的 Bug:
+-- options 不能处理中括号
+
 local M = {}
 
 local function get_name(s)

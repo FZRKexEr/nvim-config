@@ -2,7 +2,6 @@ zx.plugins.install {
   { name = 'folke/tokyonight.nvim', options = {{'branch', 'main'}},},
   { name = 'nvim-treesitter/nvim-treesitter', options = {{'do', ':TSUpdate'}}, },
   { name = 'skywind3000/asyncrun.vim', },
---  { name = 'tamago324/lir.nvim', },
   { name = 'nvim-lua/plenary.nvim', },
   { name = 'kyazdani42/nvim-web-devicons', },
   { name = 'nvim-lualine/lualine.nvim', },
@@ -10,6 +9,9 @@ zx.plugins.install {
   { name = 'dense-analysis/ale', },
   { name = 'Pocco81/AutoSave.nvim', },
   { name = 'aperezdc/vim-template', },
+  { name = 'hotoo/pangu.vim', options = {{'for', 'markdown'}}, },
+
+--  { name = 'tamago324/lir.nvim', },
 --  { name = 'hrsh7th/vim-vsnip', },
 --  { name = 'hrsh7th/vim-vsnip-integ', },
 --  { name = 'hrsh7th/cmp-vsnip', },
@@ -23,5 +25,4 @@ zx.plugins.install {
 --  { name = 'hrsh7th/cmp-cmdline', },
 --  { name = 'lukas-reineke/indent-blankline.nvim', },
 --  { name = 'L3MON4D3/LuaSnip', },
- 
 }
