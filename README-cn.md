@@ -30,7 +30,7 @@
   国内网络：
 
   ```sh
-  sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/nvim-config/main/install-cn.sh)"
+  sh -c "$(wget -O- https://ghproxy.com/https://raw.githubusercontent.com/FZRKexEr/nvim-config/main/install-cn.sh)"
   ```
 
 3. 修改 `template` 文件夹内的模板。
