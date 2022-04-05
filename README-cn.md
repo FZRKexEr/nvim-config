@@ -8,7 +8,7 @@
 
 # 特性说明
 
-- 🌈 ALE 诊断(非 LSP)
+- 🌈 ALE 诊断（非 LSP）
 - ✨ 语法高亮
 - 🌲 文件树
 - 🚀 cpp, lua, sh, python 编译运行
@@ -18,12 +18,19 @@
 # 安装
 
 1. 需要先安装：
-  - GCC (Homebrew 版)
-  - cppcheck (可选，推荐安装)
+  - GCC （Homebrew 版）
+  - cppcheck （可选，推荐安装）
 
-2. 运行命令, 以前的 nvim 配置会自动备份在 `~/.config/nvim.bak` 。
+2. 运行命令，以前的 nvim 配置会自动备份在 `~/.config/nvim.bak` 。
+
   ```sh
   sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/nvim-config/main/install.sh)"
+  ```
+
+  国内网络：
+
+  ```sh
+  sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/nvim-config/main/install-cn.sh)"
   ```
 
 3. 修改 `template` 文件夹内的模板。
