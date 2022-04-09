@@ -1,10 +1,14 @@
 rm -rf ~/.config/nvim.bak
 rm -rf ~/.local/share/nvim/
 mv ~/.config/nvim ~/.config/nvim.bak
+
 sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://github.wrong-answer.workers.dev/junegunn/vim-plug/master/plug.vim'
-git clone https://github.wrong-answer.workers.dev/FZRKexEr/nvim-config.git ~/.config/nvim/
+
+git clone https://hub.fastgit.xyz/FZRKexEr/nvim-config.git ~/.config/nvim/
+
 echo "let g:plug_url_format='https://github.wrong-answer.workers.dev/%s'" >> ~/.config/nvim/init.vim
+
 cat > ~/.config/nvim/lua/configs/nvim-treesitter.lua <<EOF
 require("nvim-treesitter.install").prefer_git = true
 for _, config in pairs(require("nvim-treesitter.parsers").get_parser_configs()) do
