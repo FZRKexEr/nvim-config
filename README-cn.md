@@ -6,7 +6,7 @@
 
 现在只有这个中文的 README, 因为写英文太麻烦了。
 
-# 特性说明
+## 特性说明
 
 - 🌈 ALE 诊断（非 LSP）
 - ✨ 语法高亮
@@ -14,9 +14,10 @@
 - 📖 打开新文件添加模板
 - 🍎 只能用在 macOS
 
-# 安装
+## 安装
 
 1. 需要先安装：
+
   - GCC （Homebrew 版）
   - cppcheck （可选，推荐安装）
 
@@ -26,14 +27,8 @@
   sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/nvim-config/main/install.sh)"
   ```
 
-  国内网络：
-
-  ```sh
-  sh -c "$(wget -O- https://github-raw.wrong-answer.workers.dev/FZRKexEr/nvim-config/main/install-cn.sh)"
-  ```
-
 3. 修改 `template` 文件夹内的模板。
 
-# 快捷键
+## 快捷键
 
 - `Space + r` 运行当前文件
