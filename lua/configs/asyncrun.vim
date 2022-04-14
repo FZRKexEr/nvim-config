@@ -6,7 +6,6 @@ function! Cmp()
   execute "w"
   if &filetype == 'cpp'
 
-"    execute "AsyncRun -mode=term -pos=right -save=1 g++-11 -std=c++17 \"$(VIM_FILEPATH)\" -o \"$(VIM_FILEDIR)/$(VIM_FILENOEXT)\" -Wall -O2 && (./$(VIM_FILENOEXT) ; rm ./$(VIM_FILENOEXT) )"
   execute "AsyncRun -mode=term -pos=right -save=1 g++-11 -std=c++17 \"$(VIM_FILEPATH)\" -o \"$(VIM_FILEDIR)/$(VIM_FILENOEXT)\" -Wall -O2 && ./$(VIM_FILENOEXT) && rm ./$(VIM_FILENOEXT)"
   
 
