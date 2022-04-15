@@ -13,6 +13,7 @@ zx.plugins.install {
   { name = 'aperezdc/vim-template', },
   { name = 'hotoo/pangu.vim', options = {{'for', 'markdown'}}, },
 
+--  { name = 'rhysd/vim-clang-format', }, 
 --  { name = 'tamago324/lir.nvim', },
 --  { name = 'hrsh7th/vim-vsnip', },
 --  { name = 'hrsh7th/vim-vsnip-integ', },
