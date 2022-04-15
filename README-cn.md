@@ -39,7 +39,11 @@
 
 建议阅读：[online-judge-tools/oj](https://github.com/online-judge-tools/oj)
 
-代码中的第一个网址会被认为是题目的 url，建议把 url 注释在代码顶部（url 两端需要留空格）。不能提交 Codeforces 代码（可以测样例），详见 [https://github.com/online-judge-tools/api-client/issues/127](https://github.com/online-judge-tools/api-client/issues/127) 。
+1. 不使用 oj-prepare 生成目录：
+  代码中的第一个网址会被认为是题目的 url，建议把 url 注释在代码顶部（url 两端需要留空格）。不能提交 Codeforces 代码（可以测样例），详见 [https://github.com/online-judge-tools/api-client/issues/127](https://github.com/online-judge-tools/api-client/issues/127) 。
+
+2. 使用 oj-prepare 生成目录：
+  oj-prepare 会自动 download 样例并记录网址，即使不把网址注释在代码里，也可以正常提交代码。
 
 ## 关于 ALE
 
