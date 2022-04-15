@@ -12,14 +12,16 @@
 - ✨ 语法高亮
 - 🚀 cpp, lua, sh, python 编译运行
 - 📖 打开新文件添加模板
-- 🍎 只能用在 macOS
+- 🖊 自动为 markdown 中文/英文/数字之间添加空格。
+- 👑 Codeforces / Atcoder 样例拉取+测试
 
 ## 安装
 
 1. 需要先安装：
 
-  - GCC （Homebrew 版）
+  - g++-11
   - cppcheck （可选，推荐安装）
+  - oj （可选，强烈推荐）
 
 2. 运行命令，以前的 nvim 配置会自动备份在 `~/.config/nvim.bak` 。
 
@@ -32,3 +34,4 @@
 ## 快捷键
 
 - `Space + r` 运行当前文件
+- `Space + t` 获取 Codeforces / Atcoder 的样例数据，并运行代码检查结果。（需要安装 oj）
