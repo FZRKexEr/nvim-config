@@ -37,7 +37,9 @@
 
 ## 关于 oj
 
-参见[online-judge-tools/oj](https://github.com/online-judge-tools/oj)
+建议阅读：[online-judge-tools/oj](https://github.com/online-judge-tools/oj)
+
+代码中的第一个网址会被认为是题目的 url，建议把 url 注释在代码顶部（url 两端需要留空格）。不能提交 Codeforces 代码（可以测样例），详见 [https://github.com/online-judge-tools/api-client/issues/127](https://github.com/online-judge-tools/api-client/issues/127) 。
 
 ## 关于 ALE
 
