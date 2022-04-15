@@ -20,8 +20,6 @@
 1. 需要先安装：
 
   - g++-11
-  - cppcheck （可选，推荐安装）
-  - oj （可选，强烈推荐）
 
 2. 运行命令，以前的 nvim 配置会自动备份在 `~/.config/nvim.bak` 。
 
@@ -35,3 +33,18 @@
 
 - `Space + r` 运行当前文件
 - `Space + t` 获取 Codeforces / Atcoder 的样例数据，并运行代码检查结果。（需要安装 oj）
+- `:SubmitCode` 提交代码到 Atcoder. （需要安装 oj）
+
+## 关于 oj
+
+参见[online-judge-tools/oj](https://github.com/online-judge-tools/oj)
+
+## 关于 ALE
+
+推荐安装几个 linters :
+
+- [cppcheck](https://github.com/danmar/cppcheck)
+- [vint](https://github.com/Vimjas/vint)
+- [markdownlint](https://github.com/DavidAnson/markdownlint)
+- [pylint](https://github.com/PyCQA/pylint)
+- [hdl-checker](https://github.com/suoto/hdl_checker)
