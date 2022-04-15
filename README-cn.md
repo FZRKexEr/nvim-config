@@ -27,7 +27,7 @@
   sh -c "$(wget -O- https://raw.githubusercontent.com/FZRKexEr/nvim-config/main/install.sh)"
   ```
 
-3. 修改 `template` 文件夹内的模板。
+3. 修改 `~/.config/nvim/template/` 文件夹内的模板。
 
 ## 快捷键
 
