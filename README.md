@@ -18,7 +18,10 @@
 
 1. 需要先安装：
 
-  - g++-11
+    - neovim >= 0.5
+    - curl
+    - git
+    - oj (可选，强烈推荐)
 
 2. 运行命令，以前的 nvim 配置会自动备份在 `~/.config/nvim.bak` 。
 
@@ -32,25 +35,23 @@
 
 - `Space + r` 运行当前文件
 - `Space + t` 获取 Codeforces / Atcoder 的样例数据，并运行代码检查结果。（需要安装 oj）
-- `:SubmitCode` 提交代码到 Atcoder. （需要安装 oj）
+- `:SubmitCode` 提交代码到 Atcoder 。（需要安装 oj）
 
-## 关于 oj
+## 安装 [oj](https://github.com/online-judge-tools/oj)
+ 
+```shell
+pip3 install online-judge-tools
+```
 
-建议阅读：
+不需要配置，安装后会自动识别。
 
-- [online-judge-tools/oj](https://github.com/online-judge-tools/oj)
-- [online-judge-tools/template-generator](https://github.com/online-judge-tools/template-generator)
+用法: 把题目 URL 注释在代码顶部, URL 两端需要留空格,(代码中的第一个网址会被认为是题目的 URL)。然后就可以测试样例/提交代码了。不能提交 Codeforces 代码（可以测样例），详见 [https://github.com/online-judge-tools/api-client/issues/127](https://github.com/online-judge-tools/api-client/issues/127) 。
 
-
-1. 不使用 oj-prepare 生成目录：
-  代码中的第一个网址会被认为是题目的 url，建议把 url 注释在代码顶部（url 两端需要留空格）。不能提交 Codeforces 代码（可以测样例），详见 [https://github.com/online-judge-tools/api-client/issues/127](https://github.com/online-judge-tools/api-client/issues/127) 。
-
-2. 使用 oj-prepare 生成目录：
-  oj-prepare 会自动 download 样例并记录网址，即使不把网址注释在代码里，也可以正常提交代码。
+注意：如果配合使用 oj 作者的另一个工具 [template-generator](https://github.com/online-judge-tools/template-generator)，使用 oj-prepare 生成比赛/题目目录，会自动记录网址，即使不把网址注释在代码里，也可以正常提交代码。
 
 ## 关于 ALE
 
-推荐安装几个 linters :
+推荐安装几个 linters (会自动识别，不需要配置):
 
 - [cppcheck](https://github.com/danmar/cppcheck)
 - [vint](https://github.com/Vimjas/vint)

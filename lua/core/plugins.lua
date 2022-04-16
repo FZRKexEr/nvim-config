@@ -9,8 +9,8 @@ zx.plugins.install {
   { name = 'dense-analysis/ale', },
   { name = 'Pocco81/AutoSave.nvim', },
   { name = 'aperezdc/vim-template', },
---  { name = 'hotoo/pangu.vim', options = {{'for', 'markdown'}}, },
 
+--  { name = 'hotoo/pangu.vim', options = {{'for', 'markdown'}}, },
 --  { name = 'sicong-li/T.vim', }, 
 --  { name = 'rhysd/vim-clang-format', }, 
 --  { name = 'tamago324/lir.nvim', },
