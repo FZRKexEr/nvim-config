@@ -31,11 +31,15 @@
 
 3. 修改 `~/.config/nvim/template/` 文件夹内的模板。
 
-## 快捷键
+## 快捷键和命令
 
 - `Space + r` 运行当前文件
 - `Space + t` 获取 Codeforces / Atcoder 的样例数据，并运行代码检查结果。（需要安装 oj）
 - `:SubmitCode` 提交代码到 Atcoder 。（需要安装 oj）
+
+- `Shift + h` 移动到左 buffer
+- `Shift + l` 移动到右 buffer
+- `Space + q` 关闭当前 buffer
 
 ## 安装 [oj](https://github.com/online-judge-tools/oj)
  
