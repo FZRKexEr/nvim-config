@@ -4,7 +4,7 @@ nnoremap <space>r :call CodeRunner() <CR>
 function! CodeRunner() 
   silent execute "w"
   if &filetype == 'cpp'
-    execute "AsyncRun -post=silent\\ execute\\ '!rm\\ a.out' -mode=term -pos=right -save=1 g++-11 -std=c++17 -Wall -O2 \"$(VIM_FILEPATH)\" && ./a.out"
+    execute "AsyncRun -post=silent\\ execute\\ '!rm\\ a.out' -mode=term -pos=right -save=1 g++ -std=c++17 -Wall -O2 \"$(VIM_FILEPATH)\" && ./a.out"
   elseif &filetype == 'lua' 
     execute "AsyncRun -mode=term -pos=right -save=1 lua $(VIM_FILEPATH) "
   elseif &filetype == 'sh' 
@@ -52,7 +52,7 @@ if executable('oj')
     let l:cur_buf_cpp = expand("%")
     let l:cur_buf_dir = expand("%:h")
     let l:sample_file_dir = l:cur_buf_dir . "/test"
-    let l:test_command = printf("g++-11 -DONLINE_JUDGE -DLOCAL_TEST %s && oj test -d %s -t 4",l:cur_buf_cpp, l:sample_file_dir)
+    let l:test_command = printf("g++ -DONLINE_JUDGE -DLOCAL_TEST %s && oj test -d %s -t 4",l:cur_buf_cpp, l:sample_file_dir)
     return l:test_command
   endfunction
 
