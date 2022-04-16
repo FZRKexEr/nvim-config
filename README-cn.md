@@ -12,7 +12,6 @@
 - ✨ 语法高亮
 - 🚀 cpp, lua, sh, python 编译运行
 - 📖 打开新文件添加模板
-- 🖊 自动为 markdown 中文/英文/数字之间添加空格。
 - 👑 Codeforces / Atcoder 样例拉取+测试
 
 ## 安装
