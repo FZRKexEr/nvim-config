@@ -45,7 +45,7 @@ pip3 install online-judge-tools
 
 不需要配置，安装后会自动识别。
 
-用法: 把题目 URL 注释在代码顶部, URL 两端需要留空格,(代码中的第一个网址会被认为是题目的 URL)。然后就可以测试样例/提交代码了。不能提交 Codeforces 代码（可以测样例），详见 [https://github.com/online-judge-tools/api-client/issues/127](https://github.com/online-judge-tools/api-client/issues/127) 。
+用法: 把题目 URL 注释在代码顶部, URL 两端需要留空格或者换行符,(代码中的第一个网址会被认为是题目的 URL)。然后就可以测试样例/提交代码了。不能提交 Codeforces 代码（可以测样例），详见 [https://github.com/online-judge-tools/api-client/issues/127](https://github.com/online-judge-tools/api-client/issues/127) 。
 
 注意：如果配合使用 oj 作者的另一个工具 [template-generator](https://github.com/online-judge-tools/template-generator)，使用 oj-prepare 生成比赛/题目目录，会自动记录网址，即使不把网址注释在代码里，也可以正常提交代码。
 
