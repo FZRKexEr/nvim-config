@@ -49,9 +49,11 @@ pip3 install online-judge-tools
 
 注意：如果配合使用 oj 作者的另一个工具 [template-generator](https://github.com/online-judge-tools/template-generator)，使用 oj-prepare 生成比赛/题目目录，会自动记录网址，即使不把网址注释在代码里，也可以正常提交代码。
 
+> 识别 URL 功能参考了: [online-judge-toolsをVimから呼んで楽をする](https://maguroguma.hatenablog.com/entry/2020/08/19/090000)
+
 ## 关于 ALE
 
-推荐安装几个 linters (会自动识别，不需要配置):
+ALE 可以用本地编译器检查代码语法错误，对于 Competitive Programming 已经足够了。但还是推荐安装几个 linters (ALE 会自动识别，不需要配置):
 
 - [cppcheck](https://github.com/danmar/cppcheck)
 - [vint](https://github.com/Vimjas/vint)
