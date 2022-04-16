@@ -1,6 +1,6 @@
 # nvim-config
 
-这是我的 Neovim 配置，因为不喜欢在 lua 文件里写 vimscript, 所以目前是用 lua 和 vimscript 混合完成的。主要用来写 C++ 。
+这是我的 Neovim 配置，主要用来写 C++, 参加算法竞赛。
 
 **没有什么特别的功能，不喜欢很多快捷键，越简单越好。**
 
