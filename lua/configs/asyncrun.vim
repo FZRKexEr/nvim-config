@@ -27,6 +27,11 @@ endfunction
 
 if executable('oj')
 
+  let l:compiler = 'g++'
+  if executable('g++-11')
+    let l:compiler = 'g++-11'
+  endif
+
   nnoremap <space>t :call TestSamples() <CR>
 
   function! s:ReadProblemURLFromCurrentBuffer()
@@ -61,7 +66,7 @@ if executable('oj')
     let l:cur_buf_cpp = expand('%')
     let l:cur_buf_dir = expand('%:h')
     let l:sample_file_dir = l:cur_buf_dir . '/test'
-    let l:test_command = printf('g++ -DONLINE_JUDGE -DLOCAL_TEST %s && oj test -d %s -t 4',l:cur_buf_cpp, l:sample_file_dir)
+    let l:test_command = printf(compiler . ' -DONLINE_JUDGE -DLOCAL_TEST %s && oj test -d %s -t 4',l:cur_buf_cpp, l:sample_file_dir)
     return l:test_command
   endfunction
 
