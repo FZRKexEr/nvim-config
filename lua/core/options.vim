@@ -1,5 +1,4 @@
 filetype on
-set nocompatible
 set encoding=UTF-8
 
 set number
@@ -14,7 +13,7 @@ syntax on
 let &t_ut=''
 set hlsearch
 set termguicolors
-set background=dark
+set background=light
 set clipboard=unnamed
 
 let mapleader=' '
