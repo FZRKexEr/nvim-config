@@ -10,6 +10,8 @@ zx.plugins.install {
   { name = 'Pocco81/AutoSave.nvim', },
   { name = 'aperezdc/vim-template', },
   { name = 'akinsho/toggleterm.nvim', },
+  { name = 'skywind3000/vim-dict', },
+  { name = 'skywind3000/vim-auto-popmenu', },
 
 --  { name = 'hotoo/pangu.vim', options = {{'for', 'markdown'}}, },
 --  { name = 'sicong-li/T.vim', }, 

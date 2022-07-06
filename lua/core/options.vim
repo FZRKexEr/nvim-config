@@ -13,8 +13,7 @@ syntax on
 let &t_ut=''
 set hlsearch
 set termguicolors
-set background=light
+set background=dark
 set clipboard=unnamed
 
 let mapleader=' '
-
